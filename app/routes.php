@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('inicio');
-});
+Route::get('/', 		array('as' 		=> 'mostrar_inicio','uses' 	=>  'PaginaController@mostrar_inicio'));
 
 Route::get('/la_empresa', function()
 {
@@ -40,3 +37,5 @@ Route::get('/contacto', function()
 {
 	return View::make('contacto');
 });
+
+Route::get('/api-obtener-textos-diapositivas', array('as' => 'api_obtener_textos_diapositivas','uses' =>  'PaginaController@api_obtener_textos_diapositivas'));

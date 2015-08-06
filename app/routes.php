@@ -38,4 +38,7 @@ Route::get('/contacto', function()
 	return View::make('contacto');
 });
 
-Route::get('/api-obtener-textos-diapositivas', array('as' => 'api_obtener_textos_diapositivas','uses' =>  'PaginaController@api_obtener_textos_diapositivas'));
+Route::get('/api-obtener-textos-imagenes_diapositivas', array('as' => 'api_obtener_textos_imagenes_diapositivas','uses' =>  'PaginaController@api_obtener_textos_imagenes_diapositivas'));
+
+Route::get('/api-obtener-articulos-imagenes-servicios', array('as' => 'api_obtener_articulos_imagenes_servicios','uses' =>  'PaginaController@api_obtener_articulos_imagenes_servicios'));
+

@@ -169,16 +169,13 @@
                                     <ul style="display:none;">
                                         <li data-transition="fade" data-slotamount="4">
                                             <div class="tp-caption sfl" data-x="80" data-y="70" data-speed="800" data-start="900" data-easing="easeInBack">
-                                                <!-- <img src="assets/images/design/revolution/slide-1-dev-2.png">-->
-                                                <img ng-src="{{diapositiva[0].archivo}}" height="400" width="400"/>
+                                                <img src="assets/images/design/revolution/slide-1-dev-2.png">
                                             </div>
                                             <div class="tp-caption sfr" data-x="120" data-y="70" data-speed="800" data-start="1500" data-easing="easeInBack">
-                                                <!--<img src="assets/images/design/revolution/slide-1-dev-3.png">-->
-                                                <img ng-src="{{diapositiva[0].archivo}}" height="60" width="60"/>
+                                                <img src="assets/images/design/revolution/slide-1-dev-3.png">
                                             </div>
                                             <div class="tp-caption sfb" data-x="100" data-y="60" data-speed="1200" data-start="2000" data-easing="easeInBack">
-                                                <!-- <img src="assets/images/design/revolution/slide-1-dev-center.png">-->
-                                                <img ng-src="{{diapositiva[0].archivo}}" height="60" width="60"/>
+                                                <img src="assets/images/design/revolution/slide-1-dev-center.png">
                                             </div>
                                             <div class="tp-caption sfl super light" data-x="0" data-y="180" data-speed="1200" data-start="1800" data-easing="easeInBack">
                                                 {{diapositiva[0].texto1}}
@@ -192,13 +189,13 @@
                                         </li>
                                         <li data-transition="boxslide" data-slotamount="4">
                                             <div class="caption sfl" data-x="80" data-y="40" data-speed="600" data-start="1500" data-easing="easeInBack">
-                                                <img ng-src="{{diapositiva[1].archivo}}" height="400" width="400"/>
+                                                <img src="assets/images/design/revolution/slide-2-dev-2.png">
                                             </div>
                                             <div class="caption sfr" data-x="-100" data-y="40" data-speed="600" data-start="2000" data-easing="easeInBack">
-                                                <img ng-src="{{diapositiva[1].archivo}}" height="400" width="400"/>
+                                                <img src="assets/images/design/revolution/slide-2-dev-3.png">
                                             </div>
                                             <div class="caption lfb fadeout" data-x="45" data-y="55" data-speed="1000" data-endspeed="1200" data-start="3500" d data-easing="easeInBack">
-                                                <img ng-src="{{diapositiva[1].archivo}}" height="400" width="400"/>
+                                                <img src="assets/images/design/revolution/slide-2-dev-center.png">
                                             </div>
                                             <div class="caption fade" data-x="-8" data-y="20" data-speed="300" data-start="6000" data-easing="Power4.easeOutCubic">
                                                 <img src="assets/images/design/revolution/slide-2-dev-center-big.png">
@@ -226,87 +223,86 @@
                     </div>
                 </div>
             </section>
-
             <!--Services-->
-            <section class="section swatch-white-red">
+            <section class="section swatch-white-red" ng-init="obtener_articulos_e_imagenes_servicios();">
                 <div class="container">
                     <header class="section-header ">
-                        <h1 class="headline super hairline">Services</h1>
-                        <p class="">Now that we know who you are, I know who I am. I&#x27;m not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain&#x27;s going to be?</p>
+                        <h1 class="headline super hairline">{{servicio[6].titulo}}</h1>
+                        <p class="">{{servicio[6].descripcion}}</p>
                     </header>
                     <div class="row">
                         <ul class="list-unstyled row box-list ">
                             <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".0s">
                                 <div class="box-round">
                                     <div class="box-dummy"></div>
-                                    <a class="box-inner " href="single-service.html">
-                                        <img class="svg-inject" src="assets/images/design/custom-icons/custom-icon-wayfarer.png" alt="glasses" data-animation="bounce" />
+                                    <a class="box-inner " href="#">
+                                        <img class="svg-inject" ng-src="{{servicio[0].archivo}}" alt="glasses" data-animation="bounce"/>
                                     </a>
                                 </div>
                                 <h3 class="text-center ">
 
                                     <a href="single-service.html">
 
-                                        Flat design
+                                        {{servicio[0].titulo}}
 
                                     </a>
 
                                 </h3>
-                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="text-center">{{servicio[0].descripcion}}</p>
                             </li>
                             <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".3s">
                                 <div class="box-round">
                                     <div class="box-dummy"></div>
-                                    <a class="box-inner " href="single-service.html">
-                                        <img class="svg-inject" src="assets/images/design/custom-icons/custom-icon-mobile.png" alt="a clock" data-animation="bounce" />
+                                    <a class="box-inner " href="#">
+                                        <img class="svg-inject" ng-src="{{servicio[1].archivo}}" alt="a clock" data-animation="bounce"/>
                                     </a>
                                 </div>
                                 <h3 class="text-center ">
 
                                     <a href="single-service.html">
 
-                                        Free updates
+                                        {{servicio[1].titulo}}
 
                                     </a>
 
                                 </h3>
-                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="text-center">{{servicio[1].descripcion}}</p>
                             </li>
                             <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".6s">
                                 <div class="box-round">
                                     <div class="box-dummy"></div>
                                     <a class="box-inner " href="single-service.html">
-                                        <img class="svg-inject" src="assets/images/design/custom-icons/custom-icon-map.png" alt="a clock" data-animation="bounce" />
+                                        <img class="svg-inject" ng-src="{{servicio[2].archivo}}" alt="a clock" data-animation="bounce"/>
                                     </a>
                                 </div>
                                 <h3 class="text-center ">
 
                                     <a href="single-service.html">
 
-                                        Multilanguage support
+                                        {{servicio[2].titulo}}
 
                                     </a>
 
                                 </h3>
-                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="text-center">{{servicio[2].descripcion}}</p>
                             </li>
                             <li class="col-md-3 text-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".9s">
                                 <div class="box-round">
                                     <div class="box-dummy"></div>
                                     <a class="box-inner " href="single-service.html">
-                                        <img class="svg-inject" src="assets/images/design/custom-icons/custom-icon-commerce.png" alt="a clock" data-animation="bounce" />
+                                        <img class="svg-inject" ng-src="{{servicio[3].archivo}}" alt="a clock" data-animation="bounce"/>
                                     </a>
                                 </div>
                                 <h3 class="text-center ">
 
                                     <a href="single-service.html">
 
-                                        Woocommerce
+                                        {{servicio[3].titulo}}
 
                                     </a>
 
                                 </h3>
-                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="text-center">{{servicio[3].descripcion}}</p>
                             </li>
                         </ul>
                     </div>
@@ -316,7 +312,7 @@
             <section class="section swatch-red-white">
                 <div class="container">
                     <header class="section-header text-center underline">
-                        <h1 class="headline hyper hairline">Our Work</h1>
+                        <h1 class="headline hyper hairline">Portafolio</h1>
                     </header>
                     <div class="row">
                         <div class="text-default os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".0s">
